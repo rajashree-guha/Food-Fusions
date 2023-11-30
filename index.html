@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Fusions</title>
+    <link rel="shortcut icon" href="./assests/tabBg-Img.png" type="image/x-icon" id="tabImg">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="body">
+    <div id="home-bg">
+        <!-- nav bar -->
+        <nav class="flex justify">
+            <div>
+                <img src="./assests/logo_Ff.png" alt="" id="logo">
+            </div>
+            <div id="text">
+                <a href="#home">HOME</a>
+                <a href="#aboutUs">ABOUT US</a>
+                <a href="#" id="categoryBtn">CATEGORIES</a>
+            </div>
+            <div>
+            <form action="" class="flex align" id="search">
+                    <img src="./assests/Search.png" alt="" id="searchBtn">
+                    <input type="text" placeholder="Search for a category" id="searchText">
+            </div>
+            </form>
+            <div>
+            </div>
+        </nav>
+
+        <!-- category toggle -->
+        <div id="popDown" class="pop">
+
+        </div>
+        <img src="./assests/green circle.png" alt="" id="greenCircle">
+
+         <!-- home page text  -->
+        <div class="flex header">
+            <div>
+                <h1 id="blackText">Flavourful Ideas,</h1>
+                <h1 id="orangeText">Delicious Meals.</h1>
+                <p>Embark on a culinary adventure with Food Fusions, your one-stop destination for meal ideas. Our
+                    innovative generator conjures up random meal ideas and caters to your specific preferences.</p>
+                 <a href="#random"><button id="randomBtn"><p>Generate a random meal</p></button></a>    
+            </div>
+            <div>
+                <img src="./assests/home-img.png" alt="" id="homeFood">
+            </div>
+        </div>
+    </div>
+
+    <!-- random image -->
+    <div id="random">
+
+    </div>
+
+    <!-- categories -->
+    <div id="categories">
+        <div id="searchCategory">
+            
+        </div>
+        <div id="grid">
+
+        </div>
+        <!-- error page-->
+        <div id="error">
+            <div class="flex center">
+                <img src="./assests/gif.gif" alt="">
+            </div>
+            <h3>Oh no!! Food category not found</h3>
+        </div>
+    </div>
+
+    <!-- pop up -->
+    <div id="popUp">
+
+    </div>
+
+    <!-- footer  -->
+    <hr>
+    <div class="footer flex">
+        <div>
+            <img src="./assests/logo_Ff.png" alt="">
+        </div>
+        <div id="content">
+            <div id="aboutUs">
+                <p>
+                    Embark on a culinary adventure with Food Fusions, your one-stop destination for innovative and
+                    mouthwatering meal ideas. Our intelligent generator conjures up unique dishes that cater to your
+                    specific preferences, ensuring every meal is an exciting and delicious experience. Whether you're
+                    craving a taste of Italy or a spicy Mexican adventure, Food Fusions is your passport to a world of
+                    culinary delights. <br> <br>Made with ❤️ by Rajashree </p>
+            </div>
+            <div class="flex between">
+                <div>
+                    <a href="mailto:rajashree.guha@kalvium.community"><img src="./assests/Email.png" alt=""></a>
+                </div>
+                <div>
+                    <a href="https://in.linkedin.com/in/rajashree-guha-a3478b279"><img src="./assests/LinkedIn.png"
+                            alt=""></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
