@@ -84,7 +84,7 @@ async function category(searchResult){
             let errorDiv=""
             errorDiv+=
             `<div class="flex center">
-            <img src="./assests/gif.gif" alt="" >
+            <img src="./assests/gif.gif" alt="" id="gif">
             </div>
              <h3>Oh no!! Food category not found</h3>`
              document.getElementById("error").innerHTML=errorDiv
@@ -158,7 +158,7 @@ async function getRecipe(id) {
             data.strIngredient20,
         ];
 
-        let ingredients = arr.filter((e) => e !="" );
+        let ingredients = arr.filter((e) => e !== "" && e !== null);
 
         let string = "";
         for (let i = 0; i < ingredients.length; i++) {

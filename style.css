@@ -386,3 +386,293 @@ input[type=text]{
 }
 
 
+
+
+
+
+/* media query  */
+
+@media screen and (max-width:480px) {
+
+
+    body{
+        overflow-x: hidden;
+    }
+    hr{
+        display: none;
+    }
+
+    #logo{
+        width: 60px;
+        height: 50px;
+        margin-left: auto;
+    }
+
+    nav{
+        margin: 10px 0;
+    }
+    
+    #text{
+        margin-top: 10px;
+    }
+    
+    #randomBtn{
+        margin-top: 20px;
+        width: 100px;
+        height: 25px;
+        font-size: 8px;
+        font-weight: 500; 
+        margin-left: 30px;
+    }
+    
+    nav>div>a{
+        padding: 0 2px ;
+        font-size: 10px;
+    }
+    #search{
+        border: 1px solid black;
+        width: 100px;
+        height: 15px;
+        margin-top: 15px;
+    }
+
+    #search>img{
+        width: 7px;
+        height: 7px;
+        margin-right: 3px;
+        margin-left: 2px;
+    }
+    
+    
+    input[type=text]{
+        padding: 0;
+        width: 80px;
+        font-size: 7px;
+    }
+    
+    /* header  */
+    #blackText{
+        font-size: 20px;
+        padding-top: 10px;
+        line-height: 30px;
+        padding-left: 30px;
+        
+    }
+    #orangeText{
+
+        font-size: 20px;
+        padding-bottom: 10px;
+        padding-left: 30px;
+    }
+    
+    #orangeText+p{
+        font-size: 8px;
+        width: 250px;
+        line-height: 15px;
+        padding-left: 30px;
+        /* display: none; */
+    }
+    
+    .header{
+        justify-content: space-evenly;
+ 
+    }
+
+    #homeFoodDiv{
+        width: 130px;
+    }
+
+    #homeFood{
+        width: 140px;
+        height: 140px;
+        margin-left: -10%;
+        margin-top: 15%;
+    }
+
+    #greenCircle{
+        left: 51%;
+        width: 180px;
+        height: 160px;
+    }
+    
+    
+    /*---------------------styling category list---------------------*/
+    #popDown{
+        width: 69px;
+        top: 36px;
+        left:174px;
+        display:none;
+        height: 220px;
+        padding-top: 10px;
+    }
+    
+    #popDown>h3{
+        padding: 1px 0;
+        font-size: 10px;
+    }
+    
+    #categoryBtn{
+        padding-top: 10px;
+        border-radius: 10px 10px 0 0;
+    }
+    
+    /*--------------------- random meal----------------------- */
+    #random{
+        margin-top: 30px;
+        text-align: center;
+    }
+    
+    
+    #randomMeal>h2{
+        font-size: 15px;
+        padding: 30px 0 30px 0;
+        width: 250px;
+        margin: auto;
+        line-height: 25px;
+    }
+    
+    #randomMeal>div>img{
+        width: 150px;
+        height: 150px;
+        border-width: 3px;
+    }
+    
+    #randomMeal>h3{
+        padding: 20px 0 10px 0;
+        font-size: 15px;
+    }
+    
+    #randomMeal>p{
+        font-size: 8px;
+        padding-bottom:30px ;
+    }
+    
+    /*--------------------- categories------------------------- */
+    
+    
+    #grid{
+        row-gap: 20px;
+        grid-template-columns: repeat(2,1fr);
+        padding-left: 10px;
+    }
+    
+    #searchCategory>h3{
+        font-size: 13px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+    
+    #searchCategory>p{
+        margin-left: 20px;
+        font-size: 8px;
+    }
+    
+    .element{
+      width: 170px;
+      height: 160px;
+      border-width: 3px;
+    }
+    
+    .element>img{
+     width: 120px;
+     height: 80px;
+     margin-top: 10px;
+     box-shadow: 4px 2px 2px 2px rgba(0, 0, 0, 0.25);
+    }
+    
+    .element>img+h3{
+      padding:0;
+      font-size: 10px;
+      width: 130px;
+    }
+    
+    /*---------------------- error-------------------------*/
+
+     #error>h3{
+        font-size: 15px;
+        margin-top: 30px;
+        padding-bottom: 50px;
+    }
+    
+    #gif{
+        width: 130px;
+    }
+    
+    /*------------------ footer-------------------------*/
+    .footer{
+       justify-content: space-between;
+       align-items: center;
+       padding:0;
+    }
+    
+    .footer>div>img{
+        width: 100px;
+        height: 80px;
+        
+    }
+    #content{
+        /* display: flex; */
+        margin-top: 30px;
+    }
+    
+    .between{
+        margin-top: 10px;
+    }
+    .between>div{
+        padding:0 20px;
+        margin-bottom: 20px;
+    }
+
+    .icon{
+        width: 15px;
+        height: 15px;
+    }
+    
+    #aboutUs{
+        width:250px ;
+        padding-right:30px ;
+        font-size: 8px;
+    }
+    
+    /*---------------------- pop up ---------------------- */
+    #recipe{
+      top: 30%;
+      left: 10%;
+      width: 300px;
+      height: 300px;
+    }
+
+    .column>img{
+        width: 180px;
+        height: 150px;
+        border: 5px solid #6F9844;
+        border-radius: 10px;
+    }
+    
+    #mealName{
+       font-size: 18px;
+    }
+    
+    .column>h2{
+        font-size: 25px;
+    }
+
+    #closeBtn {
+        width: 20px;
+        height: 20px;
+        left: 81%;
+    }
+
+    #instruction{
+        font-size: 18px;
+        width: 220px;
+    }
+    
+    #link{
+        font-size: 15px;
+        width: 300px;
+    }
+    
+}
+
+
