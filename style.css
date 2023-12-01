@@ -86,12 +86,17 @@ nav>div>a{
     margin-right: 20px;
     margin-left: 10px;
 }
+#search>img:hover{
+    width: 25px;
+    height: 25px;
+}
 
 
 input[type=text]{
     border: none;
     padding: 10px;
     width: 200px;
+    outline: none;
 }
 
 #blackText{
@@ -392,7 +397,7 @@ input[type=text]{
 
 /* media query  */
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:768px){
 
 
     body{
@@ -441,6 +446,11 @@ input[type=text]{
         height: 7px;
         margin-right: 3px;
         margin-left: 2px;
+    }
+
+    #search>img:hover{
+        width: 8px;
+        height: 8px;
     }
     
     
@@ -597,7 +607,7 @@ input[type=text]{
     #gif{
         width: 130px;
     }
-    
+
     /*------------------ footer-------------------------*/
     .footer{
        justify-content: space-between;
@@ -636,10 +646,10 @@ input[type=text]{
     
     /*---------------------- pop up ---------------------- */
     #recipe{
-      top: 30%;
+      top: 20%;
       left: 10%;
       width: 300px;
-      height: 300px;
+      height: 400px;
     }
 
     .column>img{
@@ -674,5 +684,181 @@ input[type=text]{
     }
     
 }
+@media screen and (max-width:780px) and (min-width:425px) {
+
+    /*---------------------styling category list---------------------*/
+    #popDown{
+        left:191px;
+    }
 
 
+    /*--------------------- categories------------------------- */
+
+    #grid{
+        row-gap: 30px;
+        padding-left: 30px;
+    }
+
+    #searchCategory>h3{
+        margin-left: 35px;
+    }
+    
+    #searchCategory>p{
+        margin-left: 35px;
+    }
+    
+   
+    /*---------------------- error-------------------------*/
+
+     #error>h3{
+        font-size: 15px;
+        margin-top: 30px;
+        padding-bottom: 50px;
+    }
+    
+    #gif{
+        width: 130px;
+    }
+
+    /*------------------ footer-------------------------*/
+    
+    .footer>div>img{
+        width: 130px;
+        height: 100px;
+        margin-left: 20px;
+        
+    }
+    
+    /*---------------------- pop up ---------------------- */
+    #recipe{
+      top: 20%;
+      left: 9%;
+      width: 350px;
+      height: 400px;
+    }
+
+    #closeBtn {
+        width: 20px;
+        height: 20px;
+        left: 81%;
+    }
+
+    #instruction{
+        font-size: 18px;
+        width: 250px;
+    }
+
+    
+}
+@media screen and (max-width:375px) and (min-width:320px) {
+
+
+    #logo{
+        width: 50px;
+        height: 50px;
+        margin-left: 20px;
+    }
+
+    #randomBtn{
+        margin-top: 15px;
+        height: 20px;
+        width: 90px;
+        font-size: 6px;
+        margin-left: 40px;
+    }
+    
+    nav>div>a{
+        font-size: 7px;
+    }
+
+    #search{
+        width: 70px;
+    }
+    
+    input[type=text]{
+        width: 50px;
+        font-size: 5px;
+    }
+
+    
+    /* header  */
+    #blackText{
+        font-size: 18px;
+        padding-left: 40px;
+        
+    }
+    #orangeText{
+
+        font-size: 18px;
+        padding-left: 40px;
+    }
+    
+    #orangeText+p{
+        font-size: 8px;
+        width: 200px;
+        padding-left: 40px;
+    }
+
+    #homeFood{
+        width: 140px;
+        margin-left: -14%;
+    }
+
+    #greenCircle{
+        width: 150px;
+    }
+
+    /*--------------------- categories------------------------- */
+    .element{
+      width: 140px;
+      height: 160px;
+      border-width: 3px;
+    }
+
+    /*---------------------styling category list---------------------*/
+       #popDown{
+        width: 49px;
+        left:163px;
+        height: 160px;
+    }
+    
+    #popDown>h3{
+        padding: 1px 0;
+        font-size: 7px;
+    }
+    /*---------------------- error-------------------------*/
+
+     #error>h3{
+        font-size: 12px;
+        margin-top: 20px;
+    }
+    
+    #gif{
+        width: 110px;
+    }
+
+    /*------------------ footer-------------------------*/
+     .footer>div>img{
+         width: 80px;
+         height: 70px;
+         margin-left: 20px;
+         
+     }
+
+     #aboutUs{
+         width:200px ;
+         padding-right:20px ;
+     }
+     
+     /*---------------------- pop up ---------------------- */
+     #recipe{
+       top: 20%;
+       left: 11%;
+       width: 250px; 
+     }
+     
+     #link{
+         width: 250px;
+     }
+     
+}
