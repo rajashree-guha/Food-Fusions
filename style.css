@@ -11,6 +11,7 @@ body{
     width: 100vw;
     height: 100vh;
     font-family: 'Rubik', sans-serif;
+    overflow-x: hidden;
 }
 
 .flex{
@@ -31,6 +32,7 @@ body{
     width: 200px;
     height: 150px;
     margin-left: 50px;
+    animation: fadeIn 2s forwards;
 }
 
 
@@ -40,7 +42,23 @@ nav{
 
 #text{
     margin-top: 40px;
+    animation: fadeInUp 2s forwards;
 }
+
+
+nav>div>a{
+    text-decoration:none;
+    color: black;
+    font-family: 'Inter', sans-serif;
+    padding: 0 20px ;
+    font-size: 23px;
+}
+
+nav>div>a:hover{
+    color: #FF9F03;
+}
+
+/*------------header styling---------------*/
 
 #randomBtn{
     margin-top: 50px;
@@ -54,14 +72,11 @@ nav{
     color:white; 
     font-weight: bold; 
     cursor: pointer;  
+    animation: fadeIn 3.5s forwards;
 }
 
-nav>div>a{
-    text-decoration:none;
-    color: black;
-    font-family: 'Inter', sans-serif;
-    padding: 0 20px ;
-    font-size: 23px;
+#randomBtn:hover{
+    background-color: #FF9F03;
 }
 
 #greenCircle{
@@ -78,6 +93,7 @@ nav>div>a{
     width: 350px;
     height: 40px;
     margin-top: 35px;
+    animation: fadeInRight 2s forwards;
 }
 
 #search>img{
@@ -104,19 +120,22 @@ input[type=text]{
     color: black;
     font-size: 60px;
     padding-top: 90px;
-
+    animation: fadeIn 1s forwards;
 }
+
 #orangeText{
     font-family: 'Nova Square', sans-serif;
     color:#FF9F03;
     font-size: 60px;
     padding-bottom: 60px;
+    animation: fadeIn 2s forwards;
 }
 
 #orangeText+p{
     font-size: 20px;
     width: 700px;
     line-height: 30px;
+    animation: fadeIn 3s forwards;
 }
 
 .header{
@@ -125,8 +144,52 @@ input[type=text]{
 
 #homeFood{
    margin-left: -200px;
+   animation: fadeInRight 3s forwards, rotateAnimation 90s linear 3s;
+   /* animation: rotateAnimation 90s linear 3s ; */
 
 }
+
+@keyframes fadeIn {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+@keyframes fadeInUp {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeInRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes rotateAnimation {
+    0%, 100% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(180deg);
+    }
+  }
 
 
 /*---------------------styling category list---------------------*/
@@ -135,13 +198,13 @@ input[type=text]{
     width: 188px;
     position: absolute;
     top: 76px;
-    left: 685px;
     display:none;
     background-color: #84A75F;
     height: 440px;
     border-radius:0 0 10px 10px;
     color:white;
     padding-top: 20px;
+    z-index: 5;
 }
 
 #popDown>h3{
@@ -161,6 +224,8 @@ input[type=text]{
     border-radius: 10px 10px 0 0;
 }
 
+
+
 /*--------------------- random meal----------------------- */
 #random{
     margin-top: 100px;
@@ -169,6 +234,7 @@ input[type=text]{
     background-image: url("./assests/doodle-bg.png");
     text-align: center;
 }
+
 
 
 #randomMeal>h2{
@@ -184,6 +250,13 @@ input[type=text]{
     border-radius: 20px;
     border: 5px solid #6F9844;
 }
+
+#randomMeal>div>img:hover{
+    background-color: #FF9F03;
+    filter: contrast(50%);
+    transition: filter 0.5s;
+}
+
 
 #randomMeal>h3{
     padding: 30px 0 20px 0;
@@ -244,6 +317,10 @@ input[type=text]{
   border-radius: 10px;
 }
 
+.element:hover{
+    background-color: #aeed6a92;
+}
+
 .element>img{
  width: 250px;
  height: 250px;
@@ -251,6 +328,7 @@ input[type=text]{
  margin-bottom: 10px;
  box-shadow: 6px 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
 
 .element>img+h3{
   padding: 20px 0;
@@ -376,6 +454,10 @@ input[type=text]{
     cursor: pointer;
 }
 
+#closeBtn:hover{
+    filter: contrast(50%);
+}
+
 #instruction,#link{
     font-size: 18px;
     font-weight: 200;
@@ -390,6 +472,9 @@ input[type=text]{
     color: black;
 }
 
+#link:hover{
+    color: rgba(62, 62, 222, 0.806);
+}
 
 
 
@@ -489,13 +574,13 @@ input[type=text]{
     }
 
     #homeFoodDiv{
-        width: 130px;
+        width: 110px;
     }
 
     #homeFood{
-        width: 140px;
-        height: 140px;
-        margin-left: -10%;
+        width: 120px;
+        height: 130px;
+        margin-left: -15%;
         margin-top: 15%;
     }
 
@@ -510,7 +595,6 @@ input[type=text]{
     #popDown{
         width: 69px;
         top: 36px;
-        left:174px;
         display:none;
         height: 220px;
         padding-top: 10px;
@@ -686,11 +770,26 @@ input[type=text]{
 }
 @media screen and (max-width:780px) and (min-width:425px) {
 
-    /*---------------------styling category list---------------------*/
-    #popDown{
-        left:191px;
+
+
+    /* header  */
+
+    #greenCircle{
+        left: 57%;
+        width: 180px;
+        height: 160px;
     }
 
+    #homeFoodDiv{
+        width: 100px;
+    }
+
+    #homeFood{
+        width: 130px;
+        height: 130px;
+        margin-left: -18%;
+        margin-top: 15%;
+    }
 
     /*--------------------- categories------------------------- */
 
@@ -784,24 +883,29 @@ input[type=text]{
     /* header  */
     #blackText{
         font-size: 18px;
-        padding-left: 40px;
+        padding-left: 20px;
         
     }
     #orangeText{
 
         font-size: 18px;
-        padding-left: 40px;
+        padding-left: 20px;
     }
     
     #orangeText+p{
         font-size: 8px;
         width: 200px;
-        padding-left: 40px;
+        padding-left: 20px;
+    }
+    
+    #homeFoodDiv{
+        width: 80px;
     }
 
     #homeFood{
-        width: 140px;
-        margin-left: -14%;
+        width: 110px;
+        height: 130px;
+        margin-left: -20%;
     }
 
     #greenCircle{
@@ -818,7 +922,6 @@ input[type=text]{
     /*---------------------styling category list---------------------*/
        #popDown{
         width: 49px;
-        left:163px;
         height: 160px;
     }
     

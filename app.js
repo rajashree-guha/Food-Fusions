@@ -271,10 +271,12 @@ document.getElementById("randomBtn").addEventListener("click", () => {
 
 
 
-    
+// aligning the pop down 
+var value= document.getElementById("categoryBtn").getBoundingClientRect().left;
 
+function popAlign(){
+    document.getElementById("popDown").style.left= `${value}px`;
+}
 
-    
-
-
+popAlign()
 
